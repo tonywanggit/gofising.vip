@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"gofising.vip/wxapp/models"
 	"encoding/json"
+	"gofising.vip/wxapp/models"
 
 	"github.com/astaxie/beego"
 )
@@ -15,7 +15,7 @@ type ObjectController struct {
 // @Title Create
 // @Description create object
 // @Param	body		body 	models.Object	true		"The object content"
-// @Success 200 {string} models.Object.Id
+// @Success 200 {string} models.Object.ReportId
 // @Failure 403 body is empty
 // @router / [post]
 func (o *ObjectController) Post() {
@@ -89,4 +89,3 @@ func (o *ObjectController) Delete() {
 	o.Data["json"] = "delete success!"
 	o.ServeJSON()
 }
-

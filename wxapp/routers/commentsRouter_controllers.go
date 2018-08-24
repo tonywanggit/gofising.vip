@@ -9,98 +9,74 @@ func init() {
 
 	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"],
 		beego.ControllerComments{
-			Method: "Post",
-			Router: `/`,
+			Method:           "Post",
+			Router:           `/`,
 			AllowHTTPMethods: []string{"post"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
 	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"],
 		beego.ControllerComments{
-			Method: "GetAll",
-			Router: `/`,
+			Method:           "GetAll",
+			Router:           `/`,
 			AllowHTTPMethods: []string{"get"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
 	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"],
 		beego.ControllerComments{
-			Method: "Get",
-			Router: `/:objectId`,
+			Method:           "Get",
+			Router:           `/:objectId`,
 			AllowHTTPMethods: []string{"get"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
 	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"],
 		beego.ControllerComments{
-			Method: "Put",
-			Router: `/:objectId`,
+			Method:           "Put",
+			Router:           `/:objectId`,
 			AllowHTTPMethods: []string{"put"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
 	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ObjectController"],
 		beego.ControllerComments{
-			Method: "Delete",
-			Router: `/:objectId`,
+			Method:           "Delete",
+			Router:           `/:objectId`,
 			AllowHTTPMethods: []string{"delete"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
-	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"],
+	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ReportController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ReportController"],
 		beego.ControllerComments{
-			Method: "Post",
-			Router: `/`,
+			Method:           "Post",
+			Router:           `/`,
 			AllowHTTPMethods: []string{"post"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
-	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"],
+	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ReportController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ReportController"],
 		beego.ControllerComments{
-			Method: "GetAll",
-			Router: `/`,
+			Method:           "GetAll",
+			Router:           `/`,
 			AllowHTTPMethods: []string{"get"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
-	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"],
+	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ReportController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:ReportController"],
 		beego.ControllerComments{
-			Method: "Get",
-			Router: `/:uid`,
+			Method:           "Get",
+			Router:           `/:rid`,
 			AllowHTTPMethods: []string{"get"},
-			MethodParams: param.Make(),
-			Params: nil})
+			MethodParams:     param.Make(),
+			Params:           nil})
 
 	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"],
 		beego.ControllerComments{
-			Method: "Put",
-			Router: `/:uid`,
-			AllowHTTPMethods: []string{"put"},
-			MethodParams: param.Make(),
-			Params: nil})
-
-	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"],
-		beego.ControllerComments{
-			Method: "Delete",
-			Router: `/:uid`,
-			AllowHTTPMethods: []string{"delete"},
-			MethodParams: param.Make(),
-			Params: nil})
-
-	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"],
-		beego.ControllerComments{
-			Method: "Login",
-			Router: `/login`,
-			AllowHTTPMethods: []string{"get"},
-			MethodParams: param.Make(),
-			Params: nil})
-
-	beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"] = append(beego.GlobalControllerRouter["gofising.vip/wxapp/controllers:UserController"],
-		beego.ControllerComments{
-			Method: "Logout",
-			Router: `/logout`,
-			AllowHTTPMethods: []string{"get"},
-			MethodParams: param.Make(),
-			Params: nil})
+			Method:           "Post",
+			Router:           `/`,
+			AllowHTTPMethods: []string{"post"},
+			MethodParams:     param.Make(),
+			Params:           nil})
 
 }
