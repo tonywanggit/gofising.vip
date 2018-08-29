@@ -30,6 +30,11 @@ func init() {
 				&controllers.ReportController{},
 			),
 		),
+		beego.NSNamespace("/token",
+			beego.NSInclude(
+				&controllers.TokenController{},
+			),
+		),
 	)
 	beego.AddNamespace(ns)
 }
